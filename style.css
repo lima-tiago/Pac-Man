@@ -4,6 +4,8 @@ body {
   align-items: center;
   height: 100vh;
   background-image: linear-gradient(to right, #444, #666);
+  background-repeat: no-repeat;
+  background-size: contain;
   overflow: hidden;
 }
 .pacman {
@@ -23,11 +25,17 @@ body {
   transform: translate(100%, -300%);
 }
 .pacman::after {
-  content: '•••••';
+  content: '•••••••••';
   display: flex;
   letter-spacing: 40px;
   font-size: 240px;
   color: yellow;
   width: 100px;
   transform: translate(80%, -70%);
+}
+img{
+  width: 350px;
+  display: flex;
+  margin-top: 30%;
+  margin-left: auto;
 }
